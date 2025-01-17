@@ -273,10 +273,7 @@
         flex-direction:row;
     }
 
-    /* .banner-img img{
-        max-width: 425px;
-        margin: 0 auto;
-    } */
+    
  
     .feature-img{
         display: grid;
@@ -291,10 +288,7 @@
         flex-direction: column;
     }
     
-    /* .exp-feature-img img{
-        max-width: 425px;
-        margin: 0 auto;
-    } */
+    
 
     .fact-card-container{
         display: grid;
@@ -314,14 +308,17 @@
         padding: 0px;
     }
 
-    .banner-img img{
-        max-width: 915px;
-        margin: 0 auto;
-    }
+   
 
-    .feature-section,.experience-container
+    .feature-section,.body-container
     {
         flex-direction: column;
       
     }
+    .fact-card-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left:70px;
+    }
+
 }
