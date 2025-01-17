@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@400;600&family=Ubuntu:ital@1&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-font{
+    font-family:"Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+
+  header{
+     background-color:rgba(255, 144, 14, 0.1) ;
+     padding:0px 100px;
+
+  }
+
+  .brand{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color:black;
+  }
+  
+  
+.navber{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-items a{
+   
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight:600;
+    opacity: 0.8;
+    border: 2px solid rgba(255, 144, 14, 0.1) ;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.nav-btn{
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    font-weight:600;
+    border:2px solid black;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.nav-items a:hover{
+    border:2px solid rgb(10, 10, 10);
+   
+}
+.nav-btn:hover{
+    color: black;
+    background-color: rgb(245, 246, 246);
+    border:2px solid black ;
+}
+
+
+  /* banner styyle */
+
+  .banner-container{
+    text-align: center;
+  }
+  
+
+  .section-title{
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .section-sub-title{
+    max-width: 868px;
+    margin:0 auto ;
+
+  }
+
+ .banner-btn{
+    margin-top: 40px;
+    margin-bottom:30px ;
+    border: none;
+    background-color:rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding:21px 25px;
+
+ } 
+
+ .banner-img img{
+    max-width: 1240px;
+    margin:0 auto ;
+    
+   
+ }
+
+ /* main section  */
+
+ main{
+    padding:0px 100px;
+ }
+
+ /* feature style */
+
+ .feature-section{
+    display: flex;
+    margin:85px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 73px;
+ }
+ .feature-img{
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap:24px;
+ }
+.feature-content h1{
+    font-size: 2.6rem;
+    margin-bottom: 24px;
+}
+
+#first-span{
+  color: #727272;
+}
+
+#second-span{
+    color:#131313;
+    font-weight:bold ;
+}
+
+#third-span{
+    color:#FF900E;
+    font-weight: bold;
+}
+
+.feature-description{
+    max-width: 537px;
+    color: #727272;
+
+}
+.feature-btn{
+    margin: 20px 0px;
+}
+
+/* experience section */
+.experience{
+    margin-top: 130px;
+}
+
+.experience-container{
+    display: flex;
+    gap: 100px;
+}
+
+.card-container{
+    /* border:2px solid black; */
+    gap:20px;
+}
+.card-1{
+    /* border:2px solid orange; */
+    margin-top: 30px;
+    border-radius: 8px;
+    padding:10px 32px;
+    box-shadow: 0px 6px 7px rgb(164, 162, 162);
+}
+
+.exp-title{
+    font-size: 2.5rem;
+    font-weight:bold;
+}
+.exp-subtitle{
+    color:#727272
+}
+
+.card-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-des{
+    color:#727272
+}
+
+.exp-btn{
+    padding:35px 42px;
+    margin-top: -250px;
+    margin-left: -70px;
+}
+
+
+
+/* responsive for mobile */
+
+@media screen and (max-width:576px ){
+    main,
+    header{
+        padding: 0px;
+    }
+    .navber,
+    .feature-section{
+        flex-direction: column;
+      
+    }
+
+    .nav-menu{
+        flex-direction:row;
+    }
+
+    .banner-img img{
+        max-width: 425px;
+        margin: 0 auto;
+    }
+ 
+    .feature-img{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .exp-feature-img button{
+        display: none;
+    }
+
+    .experience-container{
+        flex-direction: column;
+    }
+    
+    .exp-feature-img img{
+        max-width: 425px;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* tablet view */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+  
+    header{
+        padding: 0px;
+    }
+
+    .banner-img img{
+        max-width: 915px;
+        margin: 0 auto;
+    }
+
+    .feature-section,.experience-container
+    {
+        flex-direction: column;
+      
+    }
+}
